@@ -112,7 +112,7 @@ static ssize_t rory_control_show(struct device *dev,
 
 	sec_get_param(param_rory_control, &rory_control);
 
-	return snprintf(buf, sizeof(*buf), "%d\n", rory_control);
+	return snprintf(buf, sizeof(buf), "%d\n", rory_control);
 }
 
 static ssize_t rory_control_store(struct device *dev,
